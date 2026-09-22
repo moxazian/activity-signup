@@ -59,7 +59,7 @@ SIGNUP_DB_HOST  SIGNUP_DB_PORT  SIGNUP_DB_USER  SIGNUP_DB_PASSWORD  SIGNUP_DB_NA
 **GET /api/activity** —— 活动状态（名额 / 剩余 / 报名名单）
 ```json
 {
-  "id": 1, "title": "线下技术分享会 · 现场名额", "capacity": 5,
+  "id": 1, "title": "报名系统", "capacity": 5,
   "taken": 3, "remaining": 2,
   "signups": [
     {"user_id": "u0001", "seat_no": 1, "created_at": "2026-09-22T14:44:07.612"}

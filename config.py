@@ -36,6 +36,6 @@ def db_url(database: str | None = None) -> URL:
 
 # ---------------- 业务参数 ----------------
 ACTIVITY_ID = 1
-ACTIVITY_TITLE = "线下技术分享会 · 现场名额"
+ACTIVITY_TITLE = "报名系统"
 CAPACITY = 5                 # 活动固定 5 个名额
 USER_ID_MAX_LEN = 32         # 模拟用户 ID 最大长度
