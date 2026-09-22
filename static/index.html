@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>活动报名 · 限额 5 人</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="head">
+      <h1 id="title">活动报名</h1>
+      <p class="sub">输入模拟用户 ID 即可报名 · 名额固定 5 个</p>
+    </header>
+
+    <section class="card">
+      <div class="quota">
+        <div class="quota-num" id="remaining">-</div>
+        <div class="quota-label">剩余名额</div>
+      </div>
+
+      <div class="form">
+        <input id="uid" type="text" maxlength="32" autocomplete="off">
+        <button id="btn-signup" class="primary">立即报名</button>
+      </div>
+      <div id="msg" class="msg"></div>
+
+      <div class="tools">
+        <button id="btn-refresh">刷新</button>
+        <button id="btn-reset" class="danger">重置活动</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>报名名单 <small id="list-count"></small></h2>
+      <ul id="list" class="list"><li class="empty">暂无报名</li></ul>
+    </section>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

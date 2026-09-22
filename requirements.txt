@@ -1,0 +1,7 @@
+# 活动报名系统运行依赖（版本按本机实测可用的组合固定）
+fastapi==0.141.1
+uvicorn==0.52.3
+sqlalchemy==2.0.52
+aiomysql==0.3.2
+pymysql==1.2.0
+pydantic==2.13.4

@@ -1,0 +1,128 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  background: #f4f6fb;
+  color: #1f2430;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 16px 56px;
+}
+
+.head h1 { margin: 0 0 6px; font-size: 24px; }
+.head .sub { margin: 0 0 18px; color: #6b7280; font-size: 13px; }
+
+.card {
+  background: #fff;
+  border: 1px solid #e6e9f0;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.card h2 { margin: 0 0 14px; font-size: 15px; }
+.card h2 small { color: #9aa1ae; font-weight: 400; }
+
+/* 剩余名额 */
+.quota { display: flex; align-items: baseline; gap: 12px; }
+.quota-num {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  color: #2563eb;
+  min-width: 70px;
+}
+.quota-num.full { color: #dc2626; }
+.quota-label { color: #6b7280; font-size: 14px; }
+.quota-label small { display: block; color: #9aa1ae; margin-top: 4px; }
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 14px 0 18px;
+  color: #6b7280;
+  font-size: 13px;
+}
+.meta b { color: #1f2430; }
+.tag {
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  background: #eef1f7;
+  color: #6b7280;
+}
+.tag.ok { background: #e7f7ee; color: #12805c; }
+.tag.bad { background: #fdecec; color: #c02626; }
+
+/* 表单 */
+.form { display: flex; gap: 10px; }
+.form input {
+  flex: 1;
+  padding: 11px 13px;
+  font-size: 14px;
+  border: 1px solid #d7dbe4;
+  border-radius: 9px;
+  outline: none;
+}
+.form input:focus { border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,.12); }
+
+button {
+  padding: 11px 16px;
+  font-size: 14px;
+  border: 1px solid #d7dbe4;
+  border-radius: 9px;
+  background: #fff;
+  color: #1f2430;
+  cursor: pointer;
+}
+button:hover { background: #f7f8fb; }
+button:disabled { opacity: .55; cursor: not-allowed; }
+button.primary { background: #2563eb; border-color: #2563eb; color: #fff; }
+button.primary:hover { background: #1d4ed8; }
+button.danger { color: #c02626; border-color: #f0c9c9; }
+
+.msg { min-height: 20px; margin-top: 10px; font-size: 13px; color: #2563eb; }
+.msg.bad { color: #c02626; }
+
+.tools { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+
+/* 名单 */
+.list { list-style: none; margin: 0; padding: 0; }
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px dashed #eceff5;
+  font-size: 14px;
+}
+.list li:last-child { border-bottom: none; }
+.list .empty { color: #9aa1ae; font-size: 13px; padding: 6px 0; }
+.list button.cancel {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 7px;
+  color: #c02626;
+  border-color: #f0c9c9;
+  background: #fff;
+}
+.seat {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  background: #eef2ff;
+  color: #3346c6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+.who { flex: 1; font-family: Consolas, monospace; }
+.when { color: #9aa1ae; font-size: 12px; }
