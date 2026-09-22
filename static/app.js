@@ -73,9 +73,8 @@ async function signup() {
   }
 }
 
-// 取消报名（名单里每一行的「取消报名」按钮）
+// 取消报名（名单里每一行的「取消报名」按钮，点了直接取消，不再弹浏览器确认框）
 async function cancel(user_id, btn) {
-  if (!confirm(`确定取消 ${user_id} 的报名？名额会归还。`)) return;
   btn.disabled = true;
   try {
     const res = await fetch(`${API}/cancel`, {
